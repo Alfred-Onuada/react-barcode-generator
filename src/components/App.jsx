@@ -12,6 +12,11 @@ const App = () => {
   
       if (productInfo === '') {
         setErrorText('Cannot create a barcode with empty information')
+        
+        setTimeout(() => {
+          // reset variables
+          setErrorText('');
+        }, 3000)
         return;
       }
 
