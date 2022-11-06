@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+*{
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+}
+
+.generation-half, .preview-half{
+  text-align: center;
+}
+
+.welcome-text{
+  margin: 15px 0px;
+  font-size: 5vh;
+  font-weight: 700;
+}
+
+.instructions-text{
+  font-weight: normal;
+  font-size: 2.75vh;
+  margin: 5px 0px;
+}
+
+#product-info{
+  width: 85%;
+  font-size: 2.5vh;
+  margin: 20px 0px;
+  padding: 10px;
+}
+
+.btn{
+  padding: 10px 20px;
+  font-size: 2.75vh;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  background-color: skyblue;
+  color: white;
+  border: 1px solid #3cabd9;
+}
+
+.error-text{
+  text-align: center;
+  font-size: 2.25vh;
+}
+
+.barcode-preview{
+  max-width: 100%;
+  background-size: cover;
+  min-height: 150px;
+  margin-bottom: 30px;
+}
+
+.btn-link{
+  text-decoration: none;
+  background-color: skyblue;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 2.75vh;
+  color: white;
+  border: 1px solid #3cabd9;
+}
