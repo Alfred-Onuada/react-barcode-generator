@@ -15,15 +15,16 @@ const App = () => {
         return;
       }
 
-      // reset variables
-      setErrorText('');
-      setImgSrc('');
-
-      JsBarCode('#barcode-preview', productInfo);
+      JsBarCode('#barcode-preview', productInfo + ' -watermarked');
   
       setImgSrc(document.getElementById('barcode-preview').src);
     } catch (error) {
       setErrorText(error);
+
+      setTimeout(() => {
+        // reset variables
+        setErrorText('');
+      }, 3000)
     }
   };
 
