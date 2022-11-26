@@ -10,7 +10,8 @@ const App = () => {
     try {
       setProoductInfo(productInfo.trim());
   
-      if (productInfo === '') {
+      // UPC only accepts 12 digit inputs
+      if (productInfo === "") {
         setErrorText('Cannot create a barcode with empty information')
         
         setTimeout(() => {
@@ -20,7 +21,7 @@ const App = () => {
         return;
       }
 
-      JsBarCode('#barcode-preview', productInfo + ' -watermarked');
+      JsBarCode('#barcode-preview', productInfo, { displayValue: false });
   
       setImgSrc(document.getElementById('barcode-preview').src);
     } catch (error) {
