@@ -50,7 +50,7 @@ const App = () => {
       <div className="preview-half" >
         <img src={imgSrc} alt="Generated bar code" className="barcode-preview" id="barcode-preview" />
         <br/>
-        <a href={imgSrc} className="btn-link" download='barcode.png'>Download Image</a>
+        <a href={imgSrc} className="btn-link" download={'barcode-'+productInfo.split(' ')[1]+'.png'}>Download Image</a>
       </div>
     </div>
   )
